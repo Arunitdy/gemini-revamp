@@ -8,6 +8,7 @@ import { StatsCounter } from "./StatsCounter/StatsCounter";
 import { Prize } from "./Prizes/Prizes";
 import { Tracks }  from "./Tracks/Tracks";
 import { Timeline } from "./TimeLine/TimeLine"
+import { About } from "./About/About";
 
 import "./Profile.css";
 import "../index.css";
@@ -19,6 +20,7 @@ export const Profile = () => {
         <div className="profile">
             <Header/>
             <Home/>
+            <About/>
             <StatsCounter/>
             <Timeline/>
             <Tracks/>
