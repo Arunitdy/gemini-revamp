@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { FaLinkedin, FaGithub, FaTwitter, FaWhatsapp, FaDiscord, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import "./Footer.css";
 
-
 export const Footer = () => {
     
         const [currentTime, setCurrentTime] = useState(new Date());
