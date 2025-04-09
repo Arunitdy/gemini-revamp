@@ -41,12 +41,24 @@ export const Timeline = () => {
     if (timelineRef.current) {
       const timelineItems = timelineRef.current.querySelectorAll('.timeline-item');
       timelineItems.forEach((item, index) => {
+        // Set data-index for numbering (if needed)
+        item.setAttribute('data-index', index + 1);
+        
         // Add a small staggered delay for a nice effect
         setTimeout(() => {
           item.classList.add('visible');
         }, index * 150);
       });
     }
+    
+    // Add window resize event listener for responsive adjustments
+    const handleResize = () => {
+      // You could add specific logic here if needed
+      // For this case, CSS media queries handle most of the responsiveness
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
