@@ -101,7 +101,7 @@
   }
   .menu1{
     width: 200px;
-
+    border: 2px solid #e35822;
   }
   .menu1 a{
     display: flex;
