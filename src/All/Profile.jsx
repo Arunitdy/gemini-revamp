@@ -9,6 +9,7 @@ import { Prize } from "./Prizes/Prizes";
 import { Tracks }  from "./Tracks/Tracks";
 import { Timeline } from "./TimeLine/TimeLine"
 import { About } from "./About/About";
+import { Crew } from "./Crew/Crew";
 import RandomBlocks from "./RandomBlocks/RandomBlocks"; 
 
 import "./Profile.css";
@@ -25,6 +26,7 @@ export const Profile = () => {
             <About/>
             <StatsCounter/>
             <Timeline/>
+            <Crew/>
             <Tracks/>
             <Prize/>
             <Sponser/>
