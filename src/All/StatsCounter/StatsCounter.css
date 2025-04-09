@@ -10,7 +10,7 @@
   align-items: center;
   color: var(--text-secondary);
   font-family: "Segoe UI", sans-serif;
-  padding: 4rem;
+  padding: 8vw;
 }
 
 /* Number styling */
@@ -29,17 +29,32 @@
 }
 
 /* Medium screens (tablets) */
-@media (max-width: 768px) {
+@media (max-width: 898px) {
   .stats-container {
-    padding: 3rem 2rem;
+    padding: 2rem 1rem;
   }
+  
+.stat-box span {
+  font-size: 100%;
+}
+
 
 
   .stat-label {
     font-size: 0.95rem;
   }
 }
+@media (max-width: 750px) {
+  
+  .stats-container {
+    padding: 0rem 0rem;
+  }
+  
+.stat-box span {
+  font-size: 60%;
+}
 
+}
 /* Small screens (mobile) */
 @media (max-width: 480px) {
   .stats-container {
