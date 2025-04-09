@@ -1,10 +1,5 @@
 import {useState, useEffect} from "react"
-import ProfileImg from "./logos/ProfileImg.jpg";
 import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa"
-import { Timeline } from "./TimeLine/Timeline";
-import { Skills } from "./Skill/Skill";
-import { Projects } from "./Project/Projects"; 
-import emailjs from "@emailjs/browser";
 import "./Profile.css";
 import "../index.css";
 
@@ -28,6 +23,9 @@ export const Profile = () => {
       document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
     }, [darkMode]);
   
+    const sendMail = (e) => {
+        console.log("Sending mail...");
+    }
 
     
 
@@ -38,41 +36,6 @@ export const Profile = () => {
 
         return () => clearInterval(interval);
     }, []);
-
-    const sendMail = (e) => {
-        setSendMailButton(true);
-        e.preventDefault();
-
-        if (!formData.name || !formData.email || !formData.message) {
-            alert("Please fill out all fields.");
-            return;
-        }
-
-        emailjs.init("v1NuNxKifUW2QtRAC");
-
-        let params = {
-            name: formData.name,
-            email: formData.email,
-            subject: "Official",
-            message:`Name: ${formData.name}
-                    Email: ${formData.email}
-                    Message: ${formData.message}`
-        };
-
-        emailjs.send("service_r5z14fm", "template_ew8u8u5", params)
-            .then(response => {
-                console.log("SUCCESS!", response.status, response.text);
-                alert("Mail sent successfully!");
-                setFormData({ name: "", email: "", message: "" });
-            })
-            .catch(error => {
-                console.error("FAILED...", error);
-                alert("Failed to send mail. Please try again later.");
-            }).finally(() => {
-                setSendMailButton(false);
-            });
-    };
-
 
     return (<>
 
@@ -91,7 +54,7 @@ export const Profile = () => {
             <div id ="home" className="Home">
                 <div className="Home_right right">
                     <div  className="Profile_wrapper">
-                        <img className = "Profile_img" src={ProfileImg} alt="profile img" />
+                        <img className = "Profile_img" src="" alt="profile img" />
                     </div>
                 </div>
                 <div className = "Home_left">
@@ -114,7 +77,7 @@ export const Profile = () => {
                 </div>
                 <div className="Home_right tempright">
                     <div  className="Profile_wrapper">
-                        <img className = "Profile_img" src={ProfileImg} alt="profile img" />
+                        <img className = "Profile_img" src="" alt="profile img" />
                     </div>
                 </div>
             </div>
@@ -133,14 +96,8 @@ export const Profile = () => {
                             performance, and creating user-friendly interfaces.
                         </p>
                     </div>
-                    <Timeline  className="time_line"/>
                 </div>
-            </div>
-
-            <div id = "skills"className="skill"><Skills/></div>
-
-            <div id = "projects"className="projects"> <Projects/> </div>
-
+                
             <div id ="contact" className="footer">
                 <div className="footer-container">
                     <div className="contact-info">
@@ -189,6 +146,8 @@ export const Profile = () => {
                         </div>
                     </div>
                 </div>
+              </div>
+
             </div>
         </div>
     </>);
