@@ -35,6 +35,7 @@ export const Profile = () => {
                         </p>
                     </div>
                 </div>
+                <Timeline/>
                 <Tracks/>
                 <Prize/>
                 <Sponser/>
