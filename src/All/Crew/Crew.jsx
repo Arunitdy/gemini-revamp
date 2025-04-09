@@ -1,74 +1,179 @@
+import React, { useEffect, useRef, useState } from "react";
 import "./Crew.css";
 
+// Judges
+import Aarnav from "../../img/person/Judges/aarnav.jpg";
+import Kartik from "../../img/person/Judges/Kartik.jpeg";
+import Vani from "../../img/person/Judges/vani.jpeg";
 
-// Import images correctly
-import FDMS from "../../img/person/Judges/aarnav.jpg";
-import FDMS from "../../img/person/Judges/Kartik.jpeg";
-import FDMS from "../../img/person/Judges/vani.jpeg";
-import FDMS from "../../img/person/Mentors/Aditya.png";
-import FDMS from "../../img/person/Mentors/Aishvi.png";
-import FDMS from "../../img/person/Mentors/AkankshaJha_Mentor.jpg";
-import FDMS from "../../img/person/Mentors/DhruvBakshi_Mentor.jpg";
-import FDMS from "../../img/person/Mentors/PrathamBatra_Mentor.jpeg";
-import FDMS from "../../img/person/Mentors/RadhikaBansal_Devcation.jpeg";
-import FDMS from "../../img/person/Mentors/RudraPratapDash.jpg";
-import FDMS from "../../img/person/Mentors/SanidhyaGoel.jpeg";
-import FDMS from "../../img/person/Mentors/SuhaniNagpal_Mentor.jpeg";
-import FDMS from "../../img/person/Mentors/TanmayArora.jpg";
-import FDMS from "../../img/person/Mentors/TeekshaHarish_Mentor.jpeg";
-import FDMS from "../../img/person/Mentors/TejaswiTyagi_Mentor.jpg";
-import FDMS from "../../img/person/Mentors/VikranthUdandarao_Mentor.jpg";
+// Mentors
+import Aditya from "../../img/person/Mentors/Aditya.png";
+import Aishvi from "../../img/person/Mentors/Aishvi.png";
+import Akanksha from "../../img/person/Mentors/AkankshaJha_Mentor.jpg";
+import Dhruv from "../../img/person/Mentors/DhruvBakshi_Mentor.jpg";
+import Pratham from "../../img/person/Mentors/PrathamBatra_Mentor.jpeg";
+import Radhika from "../../img/person/Mentors/RadhikaBansal_Devcation.jpeg";
+import Rudra from "../../img/person/Mentors/RudraPratapDash.jpg";
+import Sanidhya from "../../img/person/Mentors/SanidhyaGoel.jpeg";
+import Suhani from "../../img/person/Mentors/SuhaniNagpal_Mentor.jpeg";
+import Tanmay from "../../img/person/Mentors/TanmayArora.jpg";
+import Teeksha from "../../img/person/Mentors/TeekshaHarish_Mentor.jpeg";
+import Tejaswi from "../../img/person/Mentors/TejaswiTyagi_Mentor.jpg";
+import Vikranth from "../../img/person/Mentors/VikranthUdandarao_Mentor.jpg";
 
 // Crews Data
-const Crews = [
+const Judges = [
   {
-    name: "Food Care",
-    gui: FDMS,
-    LinkedIn: "https://github.com/Arunitdy/Food-Donation-and-Distribution-Management-System",
+    name: "Aarnav",
+    img: Aarnav,
+    linkedin: "https://www.linkedin.com/in/aarnav",
   },
   {
-    name: "Portfolio 2.0",
-    gui: Portfolio,
-    LinkedIn: "https://github.com/Arunitdy/portfolio-2.0",
+    name: "Kartik",
+    img: Kartik,
+    linkedin: "https://www.linkedin.com/in/kartik",
   },
   {
-    name: "Activity Points System",
-    gui: Activity,
-    LinkedIn: "https://github.com/1518manu/ActivityPoints.git",
-  },
-  {
-    name: "Smart-Energy-Meter",
-    gui: Smart,
-    LinkedIn: "https://github.com/Arunitdy/Smart-Energy-Meter",
-  },
-  {
-    name: "Soul",
-    gui: Soul,
-    LinkedIn: "https://github.com/Arunitdy/Soul-",
+    name: "Vani",
+    img: Vani,
+    linkedin: "https://www.linkedin.com/in/vani",
   },
 ];
 
-export const Crew = ()=> {
+const Mentors = [
+  {
+    name: "Aditya",
+    img: Aditya,
+    linkedin: "https://www.linkedin.com/in/aditya",
+  },
+  {
+    name: "Aishvi",
+    img: Aishvi,
+    linkedin: "https://www.linkedin.com/in/aishvi",
+  },
+  {
+    name: "Akanksha Jha",
+    img: Akanksha,
+    linkedin: "https://www.linkedin.com/in/akanksha-jha",
+  },
+  {
+    name: "Dhruv Bakshi",
+    img: Dhruv,
+    linkedin: "https://www.linkedin.com/in/dhruv-bakshi",
+  },
+  {
+    name: "Pratham Batra",
+    img: Pratham,
+    linkedin: "https://www.linkedin.com/in/pratham-batra",
+  },
+  {
+    name: "Radhika Bansal",
+    img: Radhika,
+    linkedin: "https://www.linkedin.com/in/radhika-bansal",
+  },
+  {
+    name: "Rudra Pratap Dash",
+    img: Rudra,
+    linkedin: "https://www.linkedin.com/in/rudra-pratap-dash",
+  },
+  {
+    name: "Sanidhya Goel",
+    img: Sanidhya,
+    linkedin: "https://www.linkedin.com/in/sanidhya-goel",
+  },
+  {
+    name: "Suhani Nagpal",
+    img: Suhani,
+    linkedin: "https://www.linkedin.com/in/suhani-nagpal",
+  },
+  {
+    name: "Tanmay Arora",
+    img: Tanmay,
+    linkedin: "https://www.linkedin.com/in/tanmay-arora",
+  },
+  {
+    name: "Teeksha Harish",
+    img: Teeksha,
+    linkedin: "https://www.linkedin.com/in/teeksha-harish",
+  },
+  {
+    name: "Tejaswi Tyagi",
+    img: Tejaswi,
+    linkedin: "https://www.linkedin.com/in/tejaswi-tyagi",
+  },
+  {
+    name: "Vikranth Udandarao",
+    img: Vikranth,
+    linkedin: "https://www.linkedin.com/in/vikranth-udandarao",
+  },
+];
 
-    return (
-        
-    <section id="Crews" className="Crews-container">
-      <h2 className="section-name">Crews</h2>
+export const Crew = () => {
+  const judgesRef = useRef(null);
+  const mentorsRef = useRef(null);
+
+  // Optional: dot state
+  const [mentorIndex, setMentorIndex] = useState(0);
+  const [judgeIndex, setJudgeIndex] = useState(0);
+
+  const autoScroll = (ref, itemsLength, indexSetter) => {
+    const container = ref.current;
+    if (!container) return;
+
+    const cardWidth = container.children[0]?.offsetWidth + 20; // 20 is the gap
+    let index = 0;
+
+    return setInterval(() => {
+      index = (index + 1) % itemsLength;
+      container.scrollTo({ left: index * cardWidth, behavior: "smooth" });
+      indexSetter(index);
+    }, 3000);
+  };
+
+  useEffect(() => {
+    const mentorInterval = autoScroll(mentorsRef, Mentors.length, setMentorIndex);
+    const judgeInterval = autoScroll(judgesRef, Judges.length, setJudgeIndex);
+
+    return () => {
+      clearInterval(mentorInterval);
+      clearInterval(judgeInterval);
+    };
+  }, []);
+
+  const renderDots = (length, currentIndex) => (
+    <div className="Crews-dots">
+      {Array.from({ length }).map((_, i) => (
+        <span key={i} className={`dot ${i === currentIndex ? "active" : ""}`} />
+      ))}
+    </div>
+  );
+
+  const renderPeople = (title, list, ref, currentIndex) => (
+    <div className="section">
+      <h2 className="section-name">{title}</h2>
       <div className="Crews-wrapper">
-        <div className="Crews-scroll">
-          {Crews.map((Crew, index) => (
+        <div className="Crews-scroll" ref={ref}>
+          {list.map((person, index) => (
             <div key={index} className="Crew-card">
-              <img src={Crew.gui} alt={Crew.name} className="Crew-image" />
-              <h3>{Crew.name}</h3>
+              <img src={person.img} alt={person.name} className="Crew-image" />
+              <h3>{person.name}</h3>
               <div className="Crew-links">
-                <a href={Crew.LinkedIn} target="_blank" rel="noopener noreferrer">
-                  GitHub
+                <a href={person.linkedin} target="_blank" rel="noopener noreferrer">
+                  LinkedIn
                 </a>
               </div>
             </div>
           ))}
         </div>
       </div>
+      {renderDots(list.length, currentIndex)}
+    </div>
+  );
+
+  return (
+    <section id="Crews" className="Crews-container">
+      {renderPeople("Judges", Judges, judgesRef, judgeIndex)}
+      {renderPeople("Mentors", Mentors, mentorsRef, mentorIndex)}
     </section>
   );
 };

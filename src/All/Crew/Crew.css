@@ -1,113 +1,178 @@
-.Crews-container {
-    text-align: center;
-    margin-block: 100px;
-    background-color: transparent;
+
+  
+  /* Container */
+  .Crews-container {
+    padding: 40px 20px;
+    background-color: var(--bg-secondary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  .section-title {
+  /* Section Title */
+  .section-name {
     font-size: 2rem;
-    margin-bottom: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
     color: var(--text-primary);
+    border-left: 6px solid var(--accent-color);
+    padding-left: 12px;
   }
   
-  .section-title span {
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  /* Section Wrapper */
+  .section {
+    margin-bottom: 60px;
   }
   
-  /* Crews Grid */
+  /* Horizontal Scroll Container */
+  .Crews-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 20px;
+    position: relative;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .Crews-wrapper::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .Crews-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .Crews-wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--text-tertiary);
+    border-radius: 4px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  
   .Crews-scroll {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
     gap: 20px;
-    padding: 20px;
-    justify-content: center;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 10px;
   }
   
-  /* Crew Card */
+  /* Individual Card */
   .Crew-card {
-    background:transparent;
-    padding: 20px;
+    background: var(--bg-primary);
     border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 200px;
+    min-width: 200px;
+    padding: 16px;
     text-align: center;
-    color: var(--text-primary);
-    transition: all 0.3s ease-in-out;
-    border: 1px solid var(--accent-color);
-    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+    scroll-snap-align: start;
+    border: 1px solid var(--border-primary);
   }
   
-  /* Card Hover Effect */
   .Crew-card:hover {
-    background: var(--gradient-primary);
     transform: translateY(-5px);
-    box-shadow: 0px 8px 20px #0b0151;
   }
   
-  .Crew-card:hover .tech-badge  {
-    background: rgba(0, 0, 0, 0.3);
-  }
-  
-  .Crew-card:hover .Crew-links a {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-  }
-  /* Crew Image */
+  /* Image */
   .Crew-image {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    border: 1px solid var(--border-primary);
+    border-radius: 6px;
+    margin-bottom: 12px;
   }
   
-  /* Tech Stack Badges */
-  .tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-    margin-top: 10px;
+  /* Name */
+  .Crew-card h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin: 0 0 8px;
   }
   
-  .tech-badge {
-    background: rgba(41, 21, 117, 0.7);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    transition: background 0.3s;
-  }
-  
-  /* Crew Links */
-  .Crew-links {
-    margin-top: 15px;
-  }
-  
+  /* LinkedIn */
   .Crew-links a {
     display: inline-block;
-    margin: 5px;
-    padding: 8px 15px;
-    background-color: var(--accent-color);
-    color: white;
+    color: var(--accent-color);
+    font-weight: 500;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: all 0.3s;
+    border: 1px solid var(--accent-color);
+    border-radius: 6px;
+    padding: 4px 10px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
   }
   
+  .Crew-links a:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+  }
+  
+  /* Dotted scrollbar dots */
+  .Crews-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 8px;
+  }
+  
+  .Crews-dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--text-tertiary);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+  
+  .Crews-dots .dot.active {
+    background-color: var(--accent-color);
+    opacity: 1;
+  }
+  
+  /* Responsive Tweaks */
   @media (max-width: 768px) {
-    .Crews-scroll {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
     .Crew-card {
-      width: 90%;
+      width: 160px;
+      min-width: 160px;
+      padding: 14px;
     }
+  
     .Crew-image {
       height: 150px;
     }
+  
+    .Crew-card h3 {
+      font-size: 1rem;
+    }
+  
+    .Crew-links a {
+      font-size: 0.8rem;
+    }
+  
+    .section-name {
+      font-size: 1.6rem;
+    }
   }
+  
+  @media (max-width: 480px) {
+    .Crew-card {
+      width: 140px;
+      min-width: 140px;
+      padding: 12px;
+    }
+  
+    .Crew-image {
+      height: 130px;
+    }
+  
+    .Crew-card h3 {
+      font-size: 0.95rem;
+    }
+  
+    .Crew-links a {
+      font-size: 0.75rem;
+      padding: 3px 8px;
+    }
+  }
+  
