@@ -7,6 +7,7 @@ import { Sponser } from "./Sponsers/Sponsers";
 import { StatsCounter } from "./StatsCounter/StatsCounter";
 import { Prize } from "./Prizes/Prizes";
 import { Tracks }  from "./Tracks/Tracks";
+import { Timeline } from "./TimeLine/TimeLine"
 
 import "./Profile.css";
 import "../index.css";
@@ -34,6 +35,7 @@ export const Profile = () => {
                         </p>
                     </div>
                 </div>
+                <Timeline/>
                 <Tracks/>
                 <Prize/>
                 <Sponser/>
