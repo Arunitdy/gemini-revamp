@@ -9,6 +9,7 @@ import { Prize } from "./Prizes/Prizes";
 import { Tracks }  from "./Tracks/Tracks";
 import { Timeline } from "./TimeLine/TimeLine"
 import { About } from "./About/About";
+import RandomBlocks from "./RandomBlocks/RandomBlocks"; 
 
 import "./Profile.css";
 import "../index.css";
@@ -18,6 +19,7 @@ export const Profile = () => {
     return (<>
 
         <div className="profile">
+            {/*<RandomBlocks />*/}
             <Header/>
             <Home/>
             <About/>

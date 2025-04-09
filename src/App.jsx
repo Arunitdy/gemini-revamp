@@ -1,5 +1,5 @@
-
 import { Profile } from "./All/Profile";
+import RandomBlocks from "./All/RandomBlocks/RandomBlocks"; 
 import "./App.css";
 
 function App() {
