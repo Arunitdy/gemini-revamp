@@ -38,6 +38,7 @@
   font-weight: bold;
   font-size: clamp(.1rem, 1.5vw, 1.25rem); 
   color: var(--BW);
+  padding-bottom: .4rem;
 }
 
 .logo p2 {
