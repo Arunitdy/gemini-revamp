@@ -78,6 +78,7 @@
   
   .side-menu-active {
     transform: translateX(0%);
+    backdrop-filter: blur(10px);
   }
   
   .menu-toggle {
@@ -103,7 +104,7 @@
     align-items: start;
     flex-direction: column;
     text-decoration: none;
-    padding-left: 40px;
+    padding-right: 40px;
   }
   @media (max-width: 820px) {
     .active-sidemenu {
