@@ -5,7 +5,7 @@ import { Home } from "./Home/Home";
 import { FaqSection } from "./FaqSection/FaqSection";
 import { Sponser } from "./Sponsers/Sponsers";
 import { StatsCounter } from "./StatsCounter/StatsCounter";
-import { Price } from "./Prizes/Prizes";
+import { Prize } from "./Prizes/Prizes";
 
 import "./Profile.css";
 import "../index.css";
@@ -33,7 +33,7 @@ export const Profile = () => {
                         </p>
                     </div>
                 </div>
-                <Price/>
+                <Prize/>
                 <Sponser/>
                 <FaqSection/>
                 <Footer/>

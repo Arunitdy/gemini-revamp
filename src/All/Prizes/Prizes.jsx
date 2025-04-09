@@ -8,7 +8,7 @@ import prize from "../../img/prize.png";
 const Prizes = [
   {
     title: "Hack & Solve Winners",
-    gui: FDMS,
+    gui: prize,
     description: "Cash Prize with swag kits, medals, certificates, social media shoutouts, Interview Buddy Mock Interviews, Codecrafter Membership, Unstop Coupons.",
   },
   {
@@ -37,9 +37,9 @@ export const Prize = () => {
           {Prizes.map((Prize, index) => (
             <div key={index} className="Prize-card">
               <img src={Prize.gui} alt={Prize.title} className="Prize-image" />
-              <h3>{Prize.title}</h3>
-              <p>{Prize.description}</p>
-              <div className="tech-stack">
+              <div className="Prize-content">
+                <h3>{Prize.title}</h3>
+                <p>{Prize.description}</p>
               </div>
             </div>
           ))}
