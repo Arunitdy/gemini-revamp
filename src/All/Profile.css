@@ -126,7 +126,7 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .icon{
-    font-size: 8vw;
+    font-size: 7vw;
   }
   .connectionsWD-slide {
       bottom: 0.5rem;
