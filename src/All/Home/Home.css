@@ -21,10 +21,13 @@
     background: linear-gradient(to right, #ec7748, #6b214e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
+    font-family: 'Comic Sans MS', cursive;
   }
   
   .Home h2 {
     color: var(--text-primary);
+    font-family: 'Comic Sans MS', cursive;
   }
   
   .Home_about {
