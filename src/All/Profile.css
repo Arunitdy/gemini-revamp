@@ -49,16 +49,77 @@
     padding: 0px;
     width: 100%;
   }
-
   
-
-  /* Media Queries (unchanged as they use relative units) */
- 
+  .connectionsWD-slide {
+    position: fixed;
+    bottom: 20px;
+    right: -60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 10px 10px 10px;
+    z-index: 9999;
+    background-color:var(--bg-primary) ;
+    color: var(--BW);
+    border: var(--BW) solid 1px;
+    border-right: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.4s ease-in-out;
+  }
   
-  @media (max-width: 768px) {
-        
-    .icon {
-        font-size: 8vw;
-    }   
-    
-}
+  .connectionsWD-slide.open {
+    right: 20px;
+  }
+  
+  /* Attached toggle button */
+  .slide-toggle {
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color:var(--bg-primary) ;
+    color: var(--BW);
+    border: var(--BW) solid 1px;
+    border-right: none;
+    border-bottom-left-radius:30% ;
+    border-top-left-radius:30% ;
+    padding: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10000;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  /* Icons */
+  .connectWD {
+    font-size: 2.5rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .connectWD:hover {
+    transform: scale(1.1);
+  }
+  
+  .WhatsApp {
+    color: #25D366;
+  }
+  
+  .Discord {
+    color: #7289DA;
+  }
+  
+  /* Pulse animation */
+  @keyframes pulseScale {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  .pulse {
+    animation: pulseScale 2.5s infinite ease-in-out;
+  }
+  
