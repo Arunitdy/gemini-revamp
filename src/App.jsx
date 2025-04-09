@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Home } from './Home/Home'
-import { About } from './About/About'
+import { Home } from './All/Home/Home'
+import { About } from './All/About/About'
 import { Header } from './basic/header/header'
 import { Footer } from './basic/footer/footer'
 import './App.css'
