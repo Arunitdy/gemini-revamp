@@ -1,18 +1,19 @@
 .faq-container {
+    background-color: var(--bg-primary);
     min-height: 100vh;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: auto;
   }
   
-  .faq-container h1{
-    font-size: 2rem;
+  .faq-title {
+    font-size: 3rem;
     font-family: 'Comic Sans MS', cursive;
-    color: #7fffd4;
-    text-shadow: 4px 4px #2e0854;
-    margin: 20px;
+    color: var(--main-orange);
+    text-shadow: 3px 3px var(--card-purple);
+    margin-bottom: 2rem;
+    text-align: center;
   }
   
   .faq {
@@ -21,37 +22,37 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 20px;
   }
   
   details {
-    margin-top: 20px;
-    background: white;
-    border-radius: 6px;
-    box-shadow: 0 0 10px #00ffff;
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    border: 1px solid var(--border-primary);
+    box-shadow: 0 0 10px var(--accent-color);
     overflow: hidden;
     transition: all 0.3s ease-in-out;
   }
   
   summary {
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     padding: 1rem;
-    background: #003366;
-    color: white;
-    border-bottom: 1px solid #003366;
+    background: var(--gradient-primary);
+    color: var(--clean-white);
+    border-bottom: 1px solid var(--border-primary);
+    font-family: "Segoe UI", sans-serif;
   }
   
   details[open] summary {
-    border-bottom: none;
-    border-radius: 6px 6px 0 0;
+    border-radius: 10px 10px 0 0;
   }
   
   details p {
-    padding: 1rem;
-    background-color: #002147;
-    color: #e0f7fa;
+    padding-inline: 1rem;
+    background-color: var(--bg-tertiary);
+    color: var(--text-secondary);
     font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
   }
   
