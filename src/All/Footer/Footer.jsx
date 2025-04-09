@@ -43,15 +43,12 @@ export const Footer = () => {
             <div className="contact-info">
                 <h2>Contact Information</h2>
                 <p>
-                    Feel free to reach out through any of the following channels. I'm always open to discussing new projects,
+                    Feel free to reach out through any of the following channels. We always open to discussing new projects,
                     team collaborations, or opportunities to be a part of your vision.
                 </p>
                 <ul>
                     <li>
-                    <strong>Email:</strong> arunmundakkal003@gmail.com
-                    </li>
-                    <li>
-                    <strong>Phone:</strong> +91 9995024963
+                        <strong>Email:</strong> dscigdtuw@gmail.com
                     </li>
                 </ul>
     
