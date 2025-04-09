@@ -2,11 +2,18 @@ import "./Crew.css";
 
 
 // Import images correctly
-import FDMS from "../logos/CrewGui/FDMS.jpg";
-import Portfolio from "../logos/CrewGui/portfolio.png";
-import Activity from "../logos/CrewGui/activity.png";
-import Smart from "../logos/CrewGui/smart.png";
-import Soul from "../logos/CrewGui/soul.png";
+import FDMS from "../../img/person/Judges/";
+import FDMS from "../../img/person/Judges/";
+import FDMS from "../../img/person/Judges/";
+import FDMS from "../../img/person/Mentors/";
+import FDMS from "../../img/person/Mentors/";
+import FDMS from "../../img/person/Mentors/";
+import FDMS from "../../img/person/Mentors/";
+import FDMS from "../../img/person/Mentors/";
+import FDMS from "../../img/person/Mentors/";
+import FDMS from "../../img/person/Mentors/";
+import FDMS from "../../img/person/Mentors/";
+import FDMS from "../../img/person/Mentors/";
 
 // Crews Data
 const Crews = [
