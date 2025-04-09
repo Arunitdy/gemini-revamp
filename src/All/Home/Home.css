@@ -94,17 +94,17 @@
   }
   
   @keyframes shadowMove {
-    0% { box-shadow: 0px 0px 20px rgba(106, 90, 205, 0.8); }
-    10% { box-shadow: 8px 8px 22px rgba(43, 43, 248, 0.7); }
-    20% { box-shadow: 12px 0px 25px rgba(106, 90, 205, 0.7); }
-    30% { box-shadow: 8px -8px 22px rgba(43, 43, 248, 0.7); }
-    40% { box-shadow: 0px -12px 25px rgba(106, 90, 205, 0.7); }
-    50% { box-shadow: -8px -8px 22px rgba(43, 43, 248, 0.7); }
-    60% { box-shadow: -12px 0px 25px rgba(106, 90, 205, 0.7); }
-    70% { box-shadow: -8px 8px 22px rgba(43, 43, 248, 0.7); }
-    80% { box-shadow: 0px 12px 25px rgba(106, 90, 205, 0.8); }
-    90% { box-shadow: 8px 8px 22px rgba(43, 43, 248, 0.7); }
-    100% { box-shadow: 0px 0px 20px rgba(106, 90, 205, 0.8); }
+    0% { box-shadow: 0px 0px 20px #e35822; }
+    10% { box-shadow: 8px 8px 22px #ec7748; }
+    20% { box-shadow: 12px 0px 25px #ecb248 }
+    30% { box-shadow: 8px -8px 22px #6b214e; }
+    40% { box-shadow: 0px -12px 25px #ecb248 }
+    50% { box-shadow: -8px -8px 22px #ec7748; }
+    60% { box-shadow: -12px 0px 25px #ecb248 }
+    70% { box-shadow: -8px 8px 22px #6b214e; }
+    80% { box-shadow: 0px 12px 25px #e35822; }
+    90% { box-shadow: 8px 8px 22px #ec7748; }
+    100% { box-shadow: 0px 0px 20px #6b214e; }
   }
   
   .Home_right {
