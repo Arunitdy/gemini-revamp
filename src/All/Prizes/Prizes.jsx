@@ -40,19 +40,6 @@ export const Prize = () => {
               <h3>{Prize.title}</h3>
               <p>{Prize.description}</p>
               <div className="tech-stack">
-                {Prize.techStack.map((tech, i) => (
-                  <span key={i} className="tech-badge">{tech}</span>
-                ))}
-              </div>
-              <div className="Prize-links">
-                {Prize.liveLink && (
-                  <a href={Prize.liveLink} target="_blank" rel="noopener noreferrer">
-                    Live Demo
-                  </a>
-                )}
-                <a href={Prize.githubLink} target="_blank" rel="noopener noreferrer">
-                  GitHub
-                </a>
               </div>
             </div>
           ))}
