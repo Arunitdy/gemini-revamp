@@ -2,53 +2,29 @@ import React from "react";
 import "./Prizes.css"; 
 
 // Import images correctly
-import FDMS from "../../img/prize.png";
-import Portfolio from"../../img/prize.png"; 
-import Activity from"../../img/prize.png"; 
-import Smart from"../../img/prize.png";
-import Soul from"../../img/prize.png"; 
+import prize from "../../img/prize.png";
 
 // Prizes Data
 const Prizes = [
   {
-    title: "Food Care",
+    title: "Hack & Solve Winners",
     gui: FDMS,
-    description: "A food donation and distribution management system.",
-    techStack: ["React", "Spring Boot", "MySQL"],
-    liveLink: "",
-    githubLink: "https://github.com/Arunitdy/Food-Donation-and-Distribution-Management-System",
+    description: "Cash Prize with swag kits, medals, certificates, social media shoutouts, Interview Buddy Mock Interviews, Codecrafter Membership, Unstop Coupons.",
   },
   {
-    title: "Portfolio 2.0",
-    gui: Portfolio,
-    description: "A modern developer portfolio built with React and Vite.",
-    techStack: ["React", "Vite", "Docker"],
-    liveLink: "https://portfolio-2-0-wyqk.vercel.app/",
-    githubLink: "https://github.com/Arunitdy/portfolio-2.0",
+    title: "Mini Event Winners",
+    gui: prize,
+    description: "Goodies, certificates, social media shoutouts, unstop coupons.",
   },
   {
-    title: "Activity Points System",
-    gui: Activity,
-    description: "A system to track student activity points with  fire store.",
-    techStack: ["React", "Firebase"],
-    liveLink: "https://activity-points.vercel.app/",
-    githubLink: "https://github.com/1518manu/ActivityPoints.git",
+    title: "All Finalists",
+    gui: prize,
+    description: "Exciting goodies, certificates, unstop coupons",
   },
   {
-    title: "Smart-Energy-Meter",
-    gui: Smart,
-    description: "A smart energy meter using Blynk cloud.",
-    techStack: ["React", "Blynk Cloud"],
-    liveLink: "https://smart-energy-meter-three.vercel.app/",
-    githubLink: "https://github.com/Arunitdy/Smart-Energy-Meter",
-  },
-  {
-    title: "Soul",
-    gui: Soul,
-    description: "Soul is an interactive web experience that blends love, romance, and technology through stunning visuals, animations, and heartfelt interactions, making it perfect for digital love letters or creative proposals. ",
-    techStack: ["HTML", "CSS", "JavaScript", "emailJs.Api"],
-    liveLink: "https://soul-xi.vercel.app/",
-    githubLink: "https://github.com/Arunitdy/Soul-",
+    title: "All Participants",
+    gui: prize,
+    description: "Certificates and 50% unstop coupons and exclusive discount vouchers from IB for all.",
   },
 ];
 
