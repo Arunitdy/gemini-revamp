@@ -123,3 +123,54 @@
     animation: pulseScale 2.5s infinite ease-in-out;
   }
   
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .connectionsWD-slide {
+      bottom: 0.5rem;
+      padding: 0.5rem;
+  }
+  
+  .slide-toggle {
+      height: 3rem;
+      width: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .connectionsWD-slide {
+      gap: 0.5rem;
+  }
+  
+  .slide-toggle {
+      left: -1.75rem;
+      height: 2.5rem;
+      width: 1.75rem;
+      padding: 0.25rem;
+  }
+  
+  .connectWD {
+      font-size: 1.75rem;
+  }
+}
+
+/* Mobile Landscape Orientation */
+@media (max-height: 480px) and (orientation: landscape) {
+  .connectionsWD-slide {
+      flex-direction: row;
+      bottom: 0.5rem;
+      padding: 0.5rem 1rem;
+  }
+  
+  .connectionsWD-slide.open {
+      right: 0;
+  }
+  
+  .slide-toggle {
+      left: auto;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+      border-radius: 0 30% 30% 0;
+      border: 1px solid var(--BW);
+      border-left: none;
+  }
+}
