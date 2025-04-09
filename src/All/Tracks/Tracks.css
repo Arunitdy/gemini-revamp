@@ -4,6 +4,9 @@
     
   text-align: center; 
   }
+  .Tracks h1{
+    color: var(--BW);
+  }
   
   .track {
     display: flex;
@@ -15,7 +18,7 @@
   }
   
   .track a {
-    position: relative; /* So tooltip is positioned relative to this */
+    position: relative;
     text-decoration: none;
     display: flex;
     flex-direction: column;
