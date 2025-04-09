@@ -24,7 +24,7 @@ export const StatsCounter = () => {
           }
           return newCounts;
         });
-      }, 30);
+      }, 1);
     });
 
     return () => intervals.forEach(clearInterval);
