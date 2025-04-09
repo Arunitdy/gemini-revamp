@@ -4,6 +4,7 @@ import { Footer } from "./Footer/Footer";
 import { Home } from "./Home/Home";
 import { FaqSection } from "./FaqSection/FaqSection";
 import { Sponser } from "./Sponsers/Sponsers";
+import { StatsCounter } from "./StatsCounter/StatsCounter";
 
 import "./Profile.css";
 import "../index.css";
@@ -15,6 +16,7 @@ export const Profile = () => {
         <div className="profile">
             <Header/>
             <Home/>
+            <StatsCounter/>
             <div id= "about" className="About">
                 <h1>About <span>Me</span></h1>
                 <p className="text-center ">
