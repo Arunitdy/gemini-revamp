@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaLinkedin, FaGithub, FaTwitter, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter, FaWhatsapp, FaDiscord, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import "./Footer.css";
 
 
@@ -58,6 +58,8 @@ export const Footer = () => {
                     <a href="https://www.facebook.com/GDSCIGDTUW/"><FaFacebook  className="icon"/></a>
                     <a href="https://www.instagram.com/gdsc_igdtuw"><FaInstagram  className="icon"/></a>
                     <a href="https://www.youtube.com/@DSCIGDTUW"><FaYoutube  className="icon"/></a>
+                    <a href="https://discord.gg/eG4YP3gA48" className="icon"> <FaDiscord />  </a>
+                    <a href="https://chat.whatsapp.com/KIlPsKeZZdo7KhKtilL8AT" className="icon"> <FaWhatsapp /> </a>
                 </div>
             </div>
 
