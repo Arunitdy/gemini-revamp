@@ -24,87 +24,87 @@ import Vikranth from "../../img/person/Mentors/VikranthUdandarao_Mentor.jpg";
 // Crews Data
 const Judges = [
   {
-    name: "Aarnav",
-    img: Aarnav,
-    linkedin: "https://www.linkedin.com/in/aarnav",
-  },
-  {
-    name: "Kartik",
+    name: "Kartik Mathur",
     img: Kartik,
-    linkedin: "https://www.linkedin.com/in/kartik",
+    linkedin: "https://www.linkedin.com/in/kartik-mathur/",
   },
   {
-    name: "Vani",
+    name: "Vani Chitkara",
     img: Vani,
-    linkedin: "https://www.linkedin.com/in/vani",
+    linkedin: "https://www.linkedin.com/in/vani-chitkara/",
+  },
+  {
+    name: "Aarnav Jindal",
+    img: Aarnav,
+    linkedin: "https://www.linkedin.com/in/aarnavjindal/",
   },
 ];
 
 const Mentors = [
   {
-    name: "Aditya",
+    name: "Aditya Girdhar",
     img: Aditya,
-    linkedin: "https://www.linkedin.com/in/aditya",
+    linkedin: "https://www.linkedin.com/in/adityagirdhar",
   },
   {
-    name: "Aishvi",
+    name: "Aishvi Guleria",
     img: Aishvi,
-    linkedin: "https://www.linkedin.com/in/aishvi",
+    linkedin: "https://www.linkedin.com/in/aishvi-guleria-09a04222b",
   },
   {
     name: "Akanksha Jha",
     img: Akanksha,
-    linkedin: "https://www.linkedin.com/in/akanksha-jha",
+    linkedin: "https://www.linkedin.com/in/akanksha-jha-8609a422a",
   },
   {
     name: "Dhruv Bakshi",
     img: Dhruv,
-    linkedin: "https://www.linkedin.com/in/dhruv-bakshi",
+    linkedin: "https://www.linkedin.com/in/dhruvbakshiwork",
   },
   {
     name: "Pratham Batra",
     img: Pratham,
-    linkedin: "https://www.linkedin.com/in/pratham-batra",
+    linkedin: "https://www.linkedin.com/in/pratham1908/",
   },
   {
     name: "Radhika Bansal",
     img: Radhika,
-    linkedin: "https://www.linkedin.com/in/radhika-bansal",
+    linkedin: "https://www.linkedin.com/in/radhika403/",
   },
   {
     name: "Rudra Pratap Dash",
     img: Rudra,
-    linkedin: "https://www.linkedin.com/in/rudra-pratap-dash",
+    linkedin: "https://www.linkedin.com/in/rudra-pratap-dash-b2ab16267/",
   },
   {
     name: "Sanidhya Goel",
     img: Sanidhya,
-    linkedin: "https://www.linkedin.com/in/sanidhya-goel",
+    linkedin: "https://www.linkedin.com/in/sanidhyagoel18/",
   },
   {
     name: "Suhani Nagpal",
     img: Suhani,
-    linkedin: "https://www.linkedin.com/in/suhani-nagpal",
+    linkedin: "https://www.linkedin.com/in/suhani-nagpal072/",
   },
   {
     name: "Tanmay Arora",
     img: Tanmay,
-    linkedin: "https://www.linkedin.com/in/tanmay-arora",
+    linkedin: "https://www.linkedin.com/in/tanmaycode1/",
   },
   {
     name: "Teeksha Harish",
     img: Teeksha,
-    linkedin: "https://www.linkedin.com/in/teeksha-harish",
+    linkedin: "https://www.linkedin.com/in/teeksha-harish-5895a0234/",
   },
   {
     name: "Tejaswi Tyagi",
     img: Tejaswi,
-    linkedin: "https://www.linkedin.com/in/tejaswi-tyagi",
+    linkedin: "https://www.linkedin.com/in/tejaswi-tyagi/",
   },
   {
     name: "Vikranth Udandarao",
     img: Vikranth,
-    linkedin: "https://www.linkedin.com/in/vikranth-udandarao",
+    linkedin: "https://www.linkedin.com/in/vikranth-udandarao/",
   },
 ];
 
