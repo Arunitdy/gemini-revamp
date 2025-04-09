@@ -1,0 +1,60 @@
+.gdg-section {
+    color: var(--text-primary);
+    padding: 3rem 2rem;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+  }
+  
+  .gdg-heading {
+    font-size: 3rem;
+    background: linear-gradient(to right, #ec7748, #6b214e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
+  }
+  
+  .gdg-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--gradient-primary);
+    border: 2px solid var(--border-primary);
+    border-radius: 12px;
+    box-shadow: 0 0 15px var(--highlight-pink);
+  }
+  
+  .gdg-text-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: left;
+    padding: 1rem;
+    color: var(--BW);
+  }
+  
+  .gdg-image-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .gdg-image-stack img {
+    width: 240px;
+    border-radius: 8px;
+    border: 2px solid var(--accent-orange);
+    box-shadow: 0 0 8px var(--accent-orange);
+  }
+  
+  .gdg-bottom-note {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: var(--text-tertiary);
+  }
+  
