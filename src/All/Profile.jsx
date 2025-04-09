@@ -2,6 +2,7 @@ import {useState, useEffect} from "react"
 import {Header} from "./Header/Header";
 import { Footer } from "./Footer/Footer";
 import { Home } from "./Home/Home";
+import { FaqSection } from "./FaqSection/FaqSection"
 
 import "./Profile.css";
 import "../index.css";
@@ -28,7 +29,7 @@ export const Profile = () => {
                         </p>
                     </div>
                 </div>
-
+                <FaqSection/>
                 <Footer/>
 
             </div>
