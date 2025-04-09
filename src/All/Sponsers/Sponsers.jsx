@@ -6,7 +6,7 @@ import Unstop from "../../img/SponsersImg/unstop.jpg"
 import geekroom from "../../img/SponsersImg/geekroom-removebg-preview.png"
 import RACIGDTUW from "../../img/SponsersImg/rcigdtuw-removebg-preview.png"
 import sprintindia from "../../img/SponsersImg/sprint-removebg-preview.png"
-import Geekroom from "../../img/SponsersImg/Geekroom-removebg-preview.png"
+import  interview_buddy from "../../img/SponsersImg/interview_buddy-removebg-preview.png"
 
 const Sponsers = [
   { name: "codecrafters", logo: codecrafters, website: "https://codecrafters.io/" },
@@ -14,7 +14,7 @@ const Sponsers = [
   { name: "geekroom", logo: geekroom, website: "https://www.geekroom.in/" },
   { name: "RACIGDTUW", logo: RACIGDTUW, website: "https://sites.google.com/view/rcigdtuw/home" },
   { name: "sprintindia", logo: sprintindia, website: "https://www.sprintindia.work/about-us/" },
-  { name: "Geekroom", logo: Geekroom, website: " https://git-scm.com/ "},
+  { name: " interview buddy", logo: interview_buddy, website: " https://git-scm.com/ "},
 ];
 
 export const Sponser = () => {
