@@ -10,3 +10,15 @@ button {
     
     font-family: 'Comic Sans MS', cursive;
 }
+/* Global box-sizing fix */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
