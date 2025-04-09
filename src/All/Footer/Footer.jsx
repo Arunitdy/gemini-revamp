@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import "./Footer.css";
 
 
@@ -54,11 +54,13 @@ export const Footer = () => {
                     <strong>Phone:</strong> +91 9995024963
                     </li>
                 </ul>
+    
                 <div className="social">
-                    <a href="https://www.linkedin.com/in/arun-m-8989212aa/"><FaLinkedin className="icon a"/></a>
-                    <a href="https://github.com/Arunitdy"><FaGithub  className="icon a"/></a>
-                    <a href="https://www.facebook.com/arun.mundakkal.94"><FaFacebook  className="icon a"/></a>
-                    <a href="https://www.instagram.com/arun_mundakkal/"><FaInstagram  className="icon a"/></a>
+                    <a href="https://www.linkedin.com/company/dscigdtuw/mycompany/"><FaLinkedin className="icon"/></a>
+                    <a href="https://twitter.com/gdsc_igdtuw"><FaTwitter  className="icon"/></a>
+                    <a href="https://www.facebook.com/GDSCIGDTUW/"><FaFacebook  className="icon"/></a>
+                    <a href="https://www.instagram.com/gdsc_igdtuw"><FaInstagram  className="icon"/></a>
+                    <a href="https://www.youtube.com/@DSCIGDTUW"><FaYoutube  className="icon"/></a>
                 </div>
             </div>
 

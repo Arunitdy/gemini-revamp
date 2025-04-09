@@ -1,5 +1,5 @@
 
-import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa";
+import {FaLinkedin, FaGithub, FaFacebook,FaTwitter, FaInstagram, FaYoutube} from "react-icons/fa";
 import mainImg from "../../img/hero1.jpeg";
 import "./Home.css";
 
@@ -12,9 +12,8 @@ export const Home = () => {
             </div>
         </div>
         <div className = "Home_left">
-            <div className="Hello">Hello, my name is</div>
-            <h1>Arun M</h1>
-            <h2>Frontend Developer</h2>
+            <h2>Welcome to</h2>
+            <h1>Devcation`25</h1>
             <div className="Home_about">
                 <p>I am a Frontend Developer with experience in building websites and web applications. I specialize in JavaScript and have professional experience working with React. I also have experience working with Node.js, Express.js, and MongoDB. I am passionate about learning new technologies and building products that solve real-world problems.</p>
             </div>
@@ -23,10 +22,11 @@ export const Home = () => {
                 <a href=                 "https://www.linkedin.com/in/arun-m-8989212aa/"><button className="connect">Connect Me</button></a>
             </div>
             <div className="social">
-                <a href="https://www.linkedin.com/in/arun-m-8989212aa/"><FaLinkedin className="icon"/></a>
-                <a href="https://github.com/Arunitdy"><FaGithub  className="icon"/></a>
-                <a href="https://www.facebook.com/arun.mundakkal.94"><FaFacebook  className="icon"/></a>
-                <a href="https://www.instagram.com/arun_mundakkal/"><FaInstagram  className="icon"/></a>
+                <a href="https://www.linkedin.com/company/dscigdtuw/mycompany/"><FaLinkedin className="icon"/></a>
+                <a href="https://twitter.com/gdsc_igdtuw"><FaTwitter  className="icon"/></a>
+                <a href="https://www.facebook.com/GDSCIGDTUW/"><FaFacebook  className="icon"/></a>
+                <a href="https://www.instagram.com/gdsc_igdtuw"><FaInstagram  className="icon"/></a>
+                <a href="https://www.youtube.com/@DSCIGDTUW"><FaYoutube  className="icon"/></a>
             </div>
         </div>
         <div className="Home_right tempright">
