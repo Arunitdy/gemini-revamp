@@ -145,10 +145,18 @@
   }
   
   .slide-toggle {
-      left: -1.75rem;
+      left: -46px;
       height: 2.5rem;
       width: 1.75rem;
       padding: 0.25rem;
+  }
+  
+  .connectionsWD-slide.open {
+    right: 20px;
+    
+  .slide-toggle {
+    left: -28px;
+  }
   }
   
   .connectWD {
