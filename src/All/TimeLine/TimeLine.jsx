@@ -13,25 +13,25 @@ export const Timeline = () => {
       date: "April 8th, 2025",
       title: "Hacking Period Starts!",
       description: "Get ready to code, create, and innovate!",
-      icon: "💻"
+      icon: "🔓"
     },
     {
       date: "April 12th, 2025",
       title: "Hacking Period Ends",
       description: "Make sure to wrap up your projects and prepare for submission.",
-      icon: "🏁"
+      icon: "⏰"
     },
     {
       date: "April 13th, 2025",
       title: "Mentorship Round Starts",
       description: "Providing mentorship and feedback for every submitted project",
-      icon: "👨‍🏫"
+      icon: "🚀"
     },
     {
       date: "April 15th, 2025",
       title: "Final Pitching & Closing Ceremony",
       description: "Don't miss out on this memorable event!",
-      icon: "🏆"
+      icon: " 📅"
     }
   ];
 
