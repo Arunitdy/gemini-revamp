@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = () => {
+export const Home = () => {
   return (
     <main className="container mx-auto text-center p-8">
       <h1 className="text-5xl font-bold mb-8" style={{ fontFamily: "'Your Playful Font'" }}>Welcome to Devcation '25</h1>
@@ -16,5 +16,3 @@ const Home = () => {
     </main>
   );
 };
-
-export default Home;
