@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react"
-import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa"
+import {FaLinkedin, FaGithub, FaFacebook, FaInstagram} from "react-icons/fa";
+import mainImg from "../img/hero1.jpeg"
 import "./Profile.css";
 import "../index.css";
 
@@ -54,7 +55,7 @@ export const Profile = () => {
             <div id ="home" className="Home">
                 <div className="Home_right right">
                     <div  className="Profile_wrapper">
-                        <img className = "Profile_img" src="" alt="profile img" />
+                        <img className = "Profile_img" src={mainImg} alt="profile img" />
                     </div>
                 </div>
                 <div className = "Home_left">
@@ -77,7 +78,7 @@ export const Profile = () => {
                 </div>
                 <div className="Home_right tempright">
                     <div  className="Profile_wrapper">
-                        <img className = "Profile_img" src="" alt="profile img" />
+                        <img className = "Profile_img" src={mainImg} alt="profile img" />
                     </div>
                 </div>
             </div>
@@ -115,10 +116,10 @@ export const Profile = () => {
                             </li>
                         </ul>
                         <div className="social">
-                            <a href="https://www.linkedin.com/in/arun-m-8989212aa/"><FaLinkedin className="icon"/></a>
-                            <a href="https://github.com/Arunitdy"><FaGithub  className="icon"/></a>
-                            <a href="https://www.facebook.com/arun.mundakkal.94"><FaFacebook  className="icon"/></a>
-                            <a href="https://www.instagram.com/arun_mundakkal/"><FaInstagram  className="icon"/></a>
+                            <a href="https://www.linkedin.com/in/arun-m-8989212aa/"><FaLinkedin className="icon a"/></a>
+                            <a href="https://github.com/Arunitdy"><FaGithub  className="icon a"/></a>
+                            <a href="https://www.facebook.com/arun.mundakkal.94"><FaFacebook  className="icon a"/></a>
+                            <a href="https://www.instagram.com/arun_mundakkal/"><FaInstagram  className="icon a"/></a>
                         </div>
                     </div>
 

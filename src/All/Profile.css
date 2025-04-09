@@ -2,14 +2,31 @@
     /* Light Theme */
     --bg-primary: #ffffff;
     --bg-secondary: #f5f5f5;
-    --bg-tertiary: #0a0a23;
+    --bg-tertiary: ##6b214e;
     --text-primary: #333333;
     --text-secondary: #666666;
     --text-tertiary: #b1b2b2;
-    --gradient-primary: linear-gradient(to right, #6a5acd, rgb(43, 43, 248));
+    --gradient-primary: linear-gradient(to right, #ec7748, #6b214e);
     --border-primary: #e0e0e0;
-    --accent-color: #6a5acd;
+    --accent-color: #ec7748;
+
+    --text-purple: ##6b214e;
+    --background-peach: #fceae3;
+    --accent-orange: #ec7748;
+    --highlight-pink: #e29fa8;
+    --card-orange: #d06035;
+    --card-purple: #d3a2b9;
+
+      
+    --main-orange: #ec7748;
+    --cool-teal: #48b5ec;
+    --deep-orange: #e35822;
+    --soft-yellow: #ecb248;
+    --light-peach: #f0a072;
+    --clean-white: #ffffff;
+    --dark-text: #2b2b2b;
   }
+  
   
   [data-theme="dark"] {
     /* Dark Theme */
@@ -19,9 +36,9 @@
     --text-primary: #f5f5f5;
     --text-secondary: #aaaaaa;
     --text-tertiary: #b1b2b2;
-    --gradient-primary: linear-gradient(to right, #6a5acd, rgb(43, 43, 248));
+    --gradient-primary: linear-gradient(to right, #ec7748, #6b214e);
     --border-primary: #444444;
-    --accent-color: #6a5acd;
+    --accent-color: #ec7748;
   }
   
   .profile {}
@@ -43,7 +60,7 @@
   .header h1 {
     font-weight: bolder;
     margin: 1vw 1vw 1vw 4vw;
-    background: linear-gradient(to right, #6a5acd, rgb(43, 43, 248));
+    background: linear-gradient(to right, #ec7748, #6b214e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -58,7 +75,7 @@
   }
 
   .menu_ele:hover {   
-     color: #6a5acd;
+     color: #ec7748;
   }
 
   
@@ -78,7 +95,7 @@
   .Home h1 {
     margin-top: 0px;
     font-size: 5vw;
-    background: linear-gradient(to right, #6a5acd, rgb(43, 43, 248));
+    background: linear-gradient(to right, #ec7748, #6b214e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -124,7 +141,7 @@
     margin: 1vw;
     padding: 1vw 1.3vw;
     border-radius: 5px;
-    border: 1px solid #6a5acd;  
+    border: 1px solid #ec7748;  
     background: transparent;
     color:var(--accent-color);
     cursor: pointer;
@@ -132,12 +149,12 @@
   }
   
   .connect:hover {
-    background: linear-gradient(to right, #6a5acd, rgb(43, 43, 248));
+    background: linear-gradient(to right, #ec7748, #6b214e);
     color: white;
   }
   
   .view:hover {
-    border: 1px solid #6a5acd;
+    border: 1px solid #ec7748;
     background: transparent;
     color:var(--accent-color);
   }
@@ -150,7 +167,7 @@
   }
   
   .icon:hover {
-    color: #6a5acd;
+    color: #ec7748;
   }
   
   @keyframes shadowMove {
@@ -180,7 +197,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 10%;
     border: 6px solid transparent;
     background: linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box, 
                 var(--gradient-primary) border-box;
@@ -190,7 +207,7 @@
 .Profile_img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 9%;
 }
 
   
@@ -243,14 +260,11 @@
     margin-left: 0px;
   }
   
-  .skill {
-    margin-top: 140px;
-  }
   
   /* Footer */
   .footer {
     border-top: .1vw solid var(--border-primary);
-    background: var(--bg-tertiary);
+    background: var(--dark-text);
     color: var(--text-secondary);
     padding: 40px 0;
   }
@@ -262,7 +276,12 @@
     margin: auto;
     padding: 0 20px;
   }
-  
+  .social .a {
+    color: white;
+  }
+  .social .a:hover {
+    color: #ec7748;
+  }
   .contact-info h2,
   .contact-form h2 {
     color: var(--accent-color);
