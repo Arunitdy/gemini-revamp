@@ -1,0 +1,124 @@
+.header {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent;
+    padding: 1rem 2rem;
+  }
+  
+  /* Logo Container */
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-inline: 20px;
+    z-index: 1001;
+  }
+  
+  .logo_img {
+    width: clamp(3rem, 8vw, 4rem);
+    height: auto;
+  }
+  
+  .logo-text {
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    max-width: 100%;
+    text-align: center; 
+    margin: 0;
+  }
+  
+  .logo p1 {
+    font-weight: bold;
+    font-size: clamp(0.8rem, 1.5vw, 1.25rem); 
+    color: var(--BW);
+    padding-bottom: 0.4rem;
+  }
+  
+  .logo p2 {
+    font-size: clamp(0.6rem, 1vw, 0.9rem);
+    color: #5f6368; 
+  }
+  
+  /* Desktop Menu */
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu_ele {
+    margin: 1vw;
+    border: none;
+    padding: 0.5vw 1vw;
+    color: var(--BW);
+    background-color: transparent;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+  }
+  
+  .menu_ele:hover {   
+    color: #ec7748;
+  }
+  
+  /* Mobile Menu Toggle */
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--BW);
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 0.5rem;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .header {
+      padding-top: 20px;
+      border-bottom: var(--border-primary);
+      justify-content: space-between;
+    }
+  
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      transform: translateY(-100%);
+      transition: transform 0.5s ease;
+      z-index: 1000;
+    }
+  
+    .menu.active {
+      transform: translateY(0);
+    }
+  
+    .menu_ele {
+      margin: 0;
+      padding: 1rem;
+      font-size: 1.2rem;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }

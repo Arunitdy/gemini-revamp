@@ -18,7 +18,7 @@ export const Header = () => {
       </div>
 
       <button className="menu-toggle" onClick={toggleMenu}>
-        ☰
+        {isMenuOpen ? '✕' : '☰'}
       </button>
 
       <div className={`menu ${isMenuOpen ? 'active' : ''}`}>

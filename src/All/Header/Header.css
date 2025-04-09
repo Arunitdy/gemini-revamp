@@ -19,6 +19,7 @@
   flex-direction: column;
   align-items: center; 
   margin-inline: 20px;
+  z-index: 1001;
 }
 
 .logo_img {
