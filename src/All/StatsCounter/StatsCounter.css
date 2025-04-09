@@ -1,6 +1,7 @@
 .stats-container {
   display: flex;
   justify-content: space-between;
+  width:70%;
 }
 
 /* Individual stat box */
@@ -10,13 +11,13 @@
   align-items: center;
   color: var(--text-secondary);
   font-family: "Segoe UI", sans-serif;
-  padding: 8vw;
+  margin: 8vw;
 }
 
 /* Number styling */
 .stat-number {
   font-weight: bold;
-  color: var(--clean-white);
+  color: var(--BW);
 }
 
 /* Label styling */
@@ -44,25 +45,25 @@
     font-size: 0.95rem;
   }
 }
-@media (max-width: 750px) {
+@media (max-width:600px) {
   
   .stats-container {
     padding: 0rem 0rem;
   }
   
 .stat-box span {
-  font-size: 60%;
+  font-size: 90%;
 }
 
 }
 /* Small screens (mobile) */
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .stats-container {
     align-items: center;
   }
 
-  .stat-number {
-    font-size: 1.6rem;
+  .stat-box span {
+    font-size: 50%;
   }
 
 }

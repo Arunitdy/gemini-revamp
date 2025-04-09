@@ -7,6 +7,7 @@ import icon4 from "../../img/save-the-world.png";
 export const Tracks = () => {   
     return(
     <div className="Tracks"> 
+            <h1>Tracks</h1>
             <div className="track">
                 <a href=""><img src ={icon1} className="icon"/>
                   <p>HealthTech</p>
