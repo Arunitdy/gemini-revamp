@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './TimeLine.css';
 
 export const Timeline = () => {
@@ -13,40 +13,56 @@ export const Timeline = () => {
       date: "April 8th, 2025",
       title: "Hacking Period Starts!",
       description: "Get ready to code, create, and innovate!",
-      icon: "🔒"
+      icon: "💻"
     },
     {
       date: "April 12th, 2025",
       title: "Hacking Period Ends",
       description: "Make sure to wrap up your projects and prepare for submission.",
-      icon: "⏰"
+      icon: "🏁"
     },
     {
       date: "April 13th, 2025",
-      title: "Mentership Round Starts",
-      description: "Providing mentorship and feedback every submitted project",
-      icon: "⏰"
+      title: "Mentorship Round Starts",
+      description: "Providing mentorship and feedback for every submitted project",
+      icon: "👨‍🏫"
     },
     {
       date: "April 15th, 2025",
-      title: "Final pitching and closing ceremony.",
+      title: "Final Pitching & Closing Ceremony",
       description: "Don't miss out on this memorable event!",
-      icon: "📅"
+      icon: "🏆"
     }
   ];
 
+  const timelineRef = useRef(null);
+
+  useEffect(() => {
+    if (timelineRef.current) {
+      const timelineItems = timelineRef.current.querySelectorAll('.timeline-item');
+      timelineItems.forEach((item, index) => {
+        // Add a small staggered delay for a nice effect
+        setTimeout(() => {
+          item.classList.add('visible');
+        }, index * 150);
+      });
+    }
+  }, []);
+
   return (
     <div className="timeline-container">
-      <h2 className="timeline-title">Timeline</h2>
-      <div className="timeline">
+      <h2 className="timeline-title">Event Timeline</h2>
+      <div className="timeline" ref={timelineRef}>
         {events.map((event, index) => (
-          <div key={index} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
+          <div key={index} className="timeline-item">
             <div className="timeline-content">
-              <div className="timeline-icon">{event.icon}</div>
+              <span className="timeline-icon-wrapper">
+                <span className="timeline-icon">{event.icon}</span>
+              </span>
               <div className="timeline-date">{event.date}</div>
               <h3 className="timeline-event-title">{event.title}</h3>
               <p className="timeline-description">{event.description}</p>
-              <div className="timeline-connector"></div>
+              <div className="timeline-dot"></div>
             </div>
           </div>
         ))}
