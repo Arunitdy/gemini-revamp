@@ -8,7 +8,7 @@
 
 <h1>Gemini ReVamp: Code & Create (Web Development)</h1>
 
-<a href ="https://unstop.com/c/indira-gandhi-delhi-technical-university-for-women-igdtuw-delhi-placement-interview-competitions-articles-videos-12326">Indira Gandhi Delhi Technical University for Women (IGDTUW), Delhi</>
+<a href ="https://unstop.com/c/indira-gandhi-delhi-technical-university-for-women-igdtuw-delhi-placement-interview-competitions-articles-videos-12326">Indira Gandhi Delhi Technical University for Women (IGDTUW), Delhi</a>
 
 
 <img src = "./src/img/hero1.jpeg" alt = "event img" width ="500px"/>
