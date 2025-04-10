@@ -1,8 +1,8 @@
-<a href ="https://gemini-revamp-phqu.vercel.app/">My submission</a>
-
 
 
 <img src = "./src/img/googleSolution.png" align= "right" width = "100px"/>
+<a href ="https://gemini-revamp-phqu.vercel.app/">My submission</a>
+
 
 
 
