@@ -8,6 +8,8 @@
 
 <h1>Gemini ReVamp: Code & Create (Web Development)</h1>
 
+<p>Indira Gandhi Delhi Technical University for Women (IGDTUW), Delhi</p>
+
 
 <img src = "./src/img/hero1.jpeg" alt = "event img" width ="500px"/>
 
