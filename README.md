@@ -6,7 +6,7 @@
 <h1>Gemini ReVamp: Code & Create (Web Development)</h1>
 
 
-<img src = "./src/img/hero1.jpeg" alt = "event img"/>
+<img src = "./src/img/hero1.jpeg" alt = "event img" width ="500px"/>
 
 <h2>All that you need to know about Gemini ReVamp: Code & Create (Web Development)</h2>
 
