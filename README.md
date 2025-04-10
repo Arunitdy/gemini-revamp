@@ -12,6 +12,7 @@
 <img src = "./src/img/hero1.jpeg" alt = "event img" width ="500px"/>
 
 <h2>All that you need to know about Gemini ReVamp: Code & Create (Web Development)</h2>
+<a href ="https://unstop.com/college-fests/devcation25-gdg-on-campus-igdtuw-indira-gandhi-delhi-technical-university-for-women-igdtuw-delhi-368807">Register</a>
 
 Objective: Step into the future of Gemini AI with your creativity and technical expertise! We challenge you to redesign the given interface using any modern tech stack, from HTML & CSS to Bootstrap through prompting. The only rule? Deploy it.
 
