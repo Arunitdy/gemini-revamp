@@ -2,7 +2,7 @@
 
 
 
-<img src = "./src/img/google.png" align= "right" width = "100px"/>
+<img src = "./src/img/googleSolution.png" align= "right" width = "100px"/>
 <h1>Gemini ReVamp: Code & Create (Web Development)</h1>
 
 
