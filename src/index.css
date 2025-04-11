@@ -6,7 +6,11 @@ body {
 button {
     cursor: pointer;
 }
-
+* {
+    
+    font-family: 'Comic Sans MS', cursive;
+}
+/* Global box-sizing fix */
 *,
 *::before,
 *::after {
