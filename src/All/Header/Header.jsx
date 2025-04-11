@@ -25,7 +25,6 @@ export const Header = () => {
                     <a href="#about"><button className="menu_ele">About</button></a>
                     <a href="#stats"><button className="menu_ele">Devcation`25</button></a>
                     <a href="#timeline"><button className="menu_ele">Timeline</button></a>
-                    <a href="#crew"><button className="menu_ele">Events</button></a>
                     <a href="#tracks"><button className="menu_ele">Tracks</button></a>
                     <a href="#prizes"><button className="menu_ele">Prizes</button></a>
                     <a href="#sponsors"><button className="menu_ele">Sponsors</button></a>
@@ -47,7 +46,6 @@ export const Header = () => {
                     <a href="#about"><button className="menu_ele">About</button></a>
                     <a href="#stats"><button className="menu_ele">Devcation`25</button></a>
                     <a href="#timeline"><button className="menu_ele">Timeline</button></a>
-                    <a href="#crew"><button className="menu_ele">Events</button></a>
                     <a href="#tracks"><button className="menu_ele">Tracks</button></a>
                     <a href="#prizes"><button className="menu_ele">Prizes</button></a>
                     <a href="#sponsors"><button className="menu_ele">Sponsors</button></a>
