@@ -35,16 +35,16 @@ export const Profile = () => {
         <About />
       </div>
 
-      <div id="timeline">
-        <Timeline />
+      <div id="tracks">
+        <Tracks />
       </div>
+
 
       <div id="crew">
         <Crew />
       </div>
-
-      <div id="tracks">
-        <Tracks />
+      <div id="timeline">
+        <Timeline />
       </div>
 
       <div id="prizes">
