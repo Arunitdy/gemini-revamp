@@ -27,13 +27,12 @@ export const Profile = () => {
       <div id="home">
         <Home />
       </div>
+      <div id="stats">
+        <StatsCounter />
+      </div>
 
       <div id="about">
         <About />
-      </div>
-
-      <div id="stats">
-        <StatsCounter />
       </div>
 
       <div id="timeline">
